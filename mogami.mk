@@ -27,11 +27,6 @@ PRODUCT_COPY_FILES += \
     device/semc/mogami-common/prebuilt/hostapd.conf:system/etc/wifi/hostapd.conf \
     device/semc/mogami-common/prebuilt/wifiload:system/bin/wifiload
 
-#Use prebuilt
-PRODUCT_COPY_FILES += \
-    device/semc/mogami-common/prebuilt/hostapd.conf:system/etc/wifi/hostapd.conf \
-    device/semc/mogami-common/prebuilt/netd:system/bin/netd
-
 PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     hostapd_cli \
