@@ -22,12 +22,12 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/mogami-common/overlay
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
- 
-# Init file 
+
+# Init file
 PRODUCT_COPY_FILES += \
     device/semc/mogami-common/prebuilt/init.semc.rc:root/init.semc.rc
 
-# WiFi config & related files 
+# WiFi config & related files
 PRODUCT_COPY_FILES += \
     device/semc/mogami-common/prebuilt/hostapd.conf:system/etc/wifi/hostapd.conf \
     device/semc/mogami-common/prebuilt/wifiload:system/bin/wifiload
@@ -35,8 +35,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     hostapd_cli \
-    hostapd
+    hostapd \
+    hciconfig \
+    hcitool \
+    libbt-vendor
 
+# TI FM Radio
 PRODUCT_PACKAGES += \
     Fmapplication \
     fmapp \
